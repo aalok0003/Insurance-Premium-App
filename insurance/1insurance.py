@@ -4,6 +4,8 @@ Created on Thu Apr 20 17:25:21 2023
 
 @author: alok
 """
+py -m pip freeze > requirements.txt
+py -m pip install -r requirements.txt
 
 import streamlit as st
 import pandas as pd
