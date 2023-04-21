@@ -11,13 +11,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 nav = st.sidebar.radio("Navigation",['About','Predict'])
-df = pd.read_csv("insurance.csv")
+df = pd.read_csv("insurance/insurance.csv")
 
 if nav=="About":
     st.title("Health Insurance Premium Predictor")
     st.text("")
     st.text("")
-    st.image("Health-Lead.jpg")
+    st.image("insurance/Health-Lead.jpg")
 
 
 ## feature encoding    
