@@ -62,3 +62,5 @@ if nav=='Predict':
     if st.button("Predict"):
         st.subheader("Predicted Premium")
         st.text(rfr.predict([[age,s,bmi,children,sm,reg]]))
+        
+        
