@@ -42,6 +42,11 @@ if nav=='Predict':
     if(sex=='Female'):
         s=1
     bmi= st.number_input(("BMI"))
+    height=st.slider("Your height(in metres)",0.55,2.72)
+    weight=st.slider("Your weight(in kilograms)",5,120)
+    BMI=weight/(height*height)
+    st.write(":red[your bmi is:]",BMI)
+    
     children= st.number_input("Number of Children:",step=1, min_value=0)
     smoke= st.radio("Do you smoke", ('yes','no'))
     if (smoke=='yes'):
